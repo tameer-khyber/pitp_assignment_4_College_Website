@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Khyber University</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main styles & Portal styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portal.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Khyber<span>U</span>
+            </a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="fa-solid fa-house"></i> Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-book-open"></i> My Courses
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i> Grades & Transcripts
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-calendar-days"></i> Schedule
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-file-invoice-dollar"></i> Financials
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-gear"></i> Settings
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-profile-mini">
+                <div class="user-avatar">AD</div>
+                <div class="user-info-mini">
+                    <h4>Alex Doe</h4>
+                    <p>Computer Science, B.S.</p>
+                </div>
+            </div>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; margin-top: 1rem; padding: 0.5rem; font-size: 0.8rem; text-align: center; color: white; border-color: rgba(255,255,255,0.2);">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <button class="mobile-toggle" id="sidebar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search courses, professors, files...">
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="badge">1</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-wrapper">
+            <div class="dashboard-header animate-on-scroll visible">
+                <h1>Welcome back, Alex!</h1>
+                <p>Here is your academic overview for the Fall 2026 Semester.</p>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-grid animate-on-scroll visible" style="transition-delay: 0.1s;">
+                <div class="stat-card">
+                    <div class="stat-icon primary">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3.85</h3>
+                        <p>Cumulative GPA</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon success">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>96%</h3>
+                        <p>Attendance Rate</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon accent">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>84</h3>
+                        <p>Credits Earned</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon warning">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Pending Assignments</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Schedule Panel -->
+                <div class="dashboard-panel animate-on-scroll visible" style="transition-delay: 0.2s;">
+                    <div class="panel-header">
+                        <h2>Today's Schedule</h2>
+                        <a href="#">View Full Schedule <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 AM</div>
+                            <div class="schedule-details">
+                                <h4>Data Structures (CS-301)</h4>
+                                <p>Dr. Alan Turing</p>
+                            </div>
+                            <div class="schedule-room">Room 402, Science Wing</div>
+                        </div>
+
+                        <div class="schedule-item" style="border-left-color: #10b981;">
+                            <div class="schedule-time">11:30 AM</div>
+                            <div class="schedule-details">
+                                <h4>Calculus II (MATH-205)</h4>
+                                <p>Dr. Katherine Johnson</p>
+                            </div>
+                            <div class="schedule-room">Room 105, Main Hall</div>
+                        </div>
+
+                        <div class="schedule-item" style="border-left-color: #f59e0b; opacity: 0.7;">
+                            <div class="schedule-time">02:00 PM</div>
+                            <div class="schedule-details">
+                                <h4>Software Engineering Ethics</h4>
+                                <p>Prof. Ada Lovelace</p>
+                            </div>
+                            <div class="schedule-room">Online Seminar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notifications Panel -->
+                <div class="dashboard-panel animate-on-scroll visible" style="transition-delay: 0.3s;">
+                    <div class="panel-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#">Mark all read</a>
+                    </div>
+
+                    <div class="notif-list">
+                        <div class="notif-item">
+                            <div class="notif-icon"><i class="fa-solid fa-upload"></i></div>
+                            <div class="notif-content">
+                                <h4>Assignment Graded</h4>
+                                <p>Your 'Binary Trees Project' was graded. You scored 95/100.</p>
+                                <span class="notif-time">2 hours ago</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item">
+                            <div class="notif-icon" style="background-color: rgba(16,185,129,0.1); color: #10b981;"><i
+                                    class="fa-solid fa-file-invoice"></i></div>
+                            <div class="notif-content">
+                                <h4>Tuition Processed</h4>
+                                <p>Fall Semester payment has been successfully recorded.</p>
+                                <span class="notif-time">Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item">
+                            <div class="notif-icon" style="background-color: rgba(245,158,11,0.1); color: #f59e0b;"><i
+                                    class="fa-solid fa-bullhorn"></i></div>
+                            <div class="notif-content">
+                                <h4>Library Notice</h4>
+                                <p>Campus Main Library will close at 8 PM this Friday for maintenance.</p>
+                                <span class="notif-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Grid -->
+        </div> <!-- End Dashboard Wrapper -->
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+            const sidebar = document.getElementById('sidebar');
+
+            if (sidebarToggle && sidebar) {
+                sidebarToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
+

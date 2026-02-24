@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Account | Khyber University Portal</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main styles & Portal styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portal.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-image-side animate-on-scroll">
+        <div class="login-image-content">
+            <h2>Welcome to Khyber University!</h2>
+            <p>Activate your official student account to register for courses, check your grades, and join the
+                community.</p>
+        </div>
+    </div>
+
+    <div class="login-form-side animate-on-scroll" style="transition-delay: 0.2s;">
+        <div class="login-header" style="margin-bottom: 2rem;">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Khyber<span>University</span>
+            </a>
+            <p>Activate your student portal account.</p>
+        </div>
+
+        <form action="#" method="POST"
+            onsubmit="event.preventDefault(); alert('Account activated! You can now log in.'); window.location.href='login.html';">
+
+            <div class="portal-form-group">
+                <label for="activation_code">Activation Code (from admissions letter)</label>
+                <div class="portal-input-wrapper">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="text" id="activation_code" name="activation_code" placeholder="e.g. KU-A9B8-C7D6"
+                        required>
+                </div>
+            </div>
+
+            <div class="portal-form-group">
+                <label for="student_id">Issued Student ID</label>
+                <div class="portal-input-wrapper">
+                    <i class="fa-solid fa-id-card"></i>
+                    <input type="text" id="student_id" name="student_id" placeholder="e.g. 2024-KU-1054" required>
+                </div>
+            </div>
+
+            <div class="portal-form-group">
+                <label for="new_password">Create Password</label>
+                <div class="portal-input-wrapper">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="new_password" name="new_password" placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+                style="width: 100%; padding: 1rem; font-size: 1rem; margin-top: 1rem; margin-bottom: 1.5rem;">Activate
+                Account</button>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; border-color: #d1d5db; color: var(--text-main); text-align: center; display: block; padding: 0.9rem;">
+                <i class="fa-solid fa-arrow-left" style="margin-right: 5px;"></i> Back to Login
+            </a>
+        </form>
+
+        <p style="text-align: center; margin-top: 2rem; color: var(--text-light); font-size: 0.9rem;">
+            Need help? <a href="contact.html" style="color: var(--accent-color); font-weight: 600;">Contact
+                Admissions</a>
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.animate-on-scroll').forEach(el => el.classList.add('visible'));
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
+
