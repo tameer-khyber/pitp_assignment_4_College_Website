@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Khyber University Central Library: Your gateway to knowledge, research, and quiet study spaces.">
+    <title>Central Library | Khyber University</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Khyber<span>University</span>
+            </a>
+
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="library.html" class="active">Library</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <!-- Login Button added dynamically across pages -->
+                <li><a href="login.html" class="nav-login-btn"><i class="fa-solid fa-user"
+                            style="margin-right:5px;"></i> Portal</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Library Hero Section -->
+    <section class="hero "
+        style="background-image: url('images/library_hero_modern.png'); height: 60vh; min-height: 400px; background-attachment: scroll; z-index: 10; position: relative;">
+        <div class="container" style="text-align: center; margin: 0 auto; max-width: 900px;">
+            <h1 style="font-size: 3.5rem;">Central Library</h1>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem;">A sanctuary for scholars. Explore over
+                2 million volumes, quiet study areas, and state-of-the-art research resources.</p>
+            <div class="search-bar" style="max-width: 600px; margin: 0 auto; position: relative;">
+                <input type="text" placeholder="Search books, articles, journals..."
+                    style="width: 100%; padding: 1.2rem 1.2rem 1.2rem 3rem; border-radius: 30px; border: none; font-size: 1rem; box-shadow: var(--shadow-lg);">
+                <i class="fa-solid fa-search"
+                    style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: var(--text-light); font-size: 1.2rem;"></i>
+                <button class="btn btn-primary"
+                    style="position: absolute; right: 5px; top: 5px; bottom: 5px; border-radius: 25px; padding: 0 1.5rem;">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section style="background-color: var(--bg-white);">
+        <div class="container" style="text-align: center;">
+            <div class="section-title">Resources & Spaces</div>
+            <p class="section-subtitle">Discover What We Offer</p>
+
+            <div class="cards-grid">
+                <!-- Books -->
+                <div class="card ">
+                    <div class="card-img-wrapper" style="height: 250px;">
+                        <img src="images/library_interior.jpg" alt="Vast library bookshelves">
+                    </div>
+                    <div class="card-content">
+                        <h3>Physical Collections</h3>
+                        <p>Browse through centuries of printed knowledge. Our main hall houses over 2 million books,
+                            periodicals, and rare manuscripts spanning all academic disciplines.</p>
+                        <a href="#" class="content-link">Browse Catalog</a>
+                    </div>
+                </div>
+
+                <!-- Digital -->
+                <div class="card ">
+                    <div class="card-img-wrapper" style="height: 250px;">
+                        <img src="images/library_study.jpg" alt="Student studying with laptop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Digital Library & Databases</h3>
+                        <p>Access thousands of academic journals, e-books, and research databases from anywhere in the
+                            world using your student portal login.</p>
+                        <a href="#" class="content-link">Access Databases</a>
+                    </div>
+                </div>
+
+                <!-- Study Spaces -->
+                <div class="card ">
+                    <div class="card-img-wrapper"
+                        style="background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; height: 250px;">
+                        <i class="fa-solid fa-book-reader" style="font-size: 5rem; color: var(--accent-color);"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Study Rooms & Labs</h3>
+                        <p>Reserve private study rooms, access high-performance computing labs, or find a quiet desk in
+                            our silent reading areas.</p>
+                        <a href="#" class="content-link">Reserve a Room</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section style="background-color: var(--primary-color); color: white;">
+        <div class="container about-grid ">
+            <div class="about-text">
+                <p class="section-subtitle" style="color: var(--accent-color); text-align: left; margin-bottom: 1rem;">
+                    Operating Hours</p>
+                <h2 style="color: white;">When to Visit</h2>
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--accent-color);">
+                    <ul style="color: #cbd5e1;">
+                        <li
+                            style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.8rem 0;">
+                            <strong>Monday - Thursday:</strong> <span>7:00 AM - Midnight</span>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.8rem 0;">
+                            <strong>Friday:</strong> <span>7:00 AM - 10:00 PM</span>
+                        </li>
+                        <li
+                            style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.8rem 0;">
+                            <strong>Saturday:</strong> <span>9:00 AM - 9:00 PM</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; padding: 0.8rem 0 0;">
+                            <strong>Sunday:</strong> <span>10:00 AM - Midnight</span>
+                        </li>
+                    </ul>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #94a3b8;">* Note: Hours may vary during holidays
+                    and final exam weeks. The 24/7 graduate reading room remains open to authorized members.</p>
+            </div>
+
+            <div class="contact-info" style="color: white; padding-left: 2rem;">
+                <h3 style="color: white; font-family: 'Cinzel', serif;">Need Assistance?</h3>
+                <p style="margin-bottom: 2rem; color: #cbd5e1;">Our expert reference librarians are here to help you
+                    find the sources you need for your next research paper or project.</p>
+
+                <div class="info-item">
+                    <div class="info-icon" style="background: rgba(180,83,9,0.2);">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: white;">Ask a
+                            Librarian</h4>
+                        <p style="color: #cbd5e1; margin:0;">Chat online or email<br><a href="mailto:library@khyber.edu"
+                                style="color: var(--accent-color);">library@khyber.edu</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon" style="background: rgba(180,83,9,0.2);">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: white;">Reference
+                            Desk</h4>
+                        <p style="color: #cbd5e1; margin:0;">(555) 123-LIB1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Khyber<span>University</span>
+                    </a>
+                    <p>Empowering minds and shaping the future through excellence in education, research, and community
+                        engagement.</p>
+                </div>
+
+                <div class="footer-col" style="padding-top: 10px;">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" style="padding-top: 10px;">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="login.html">Student Portal</a></li>
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" style="padding-top: 10px;">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 0.8rem;">
+                            <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> Hyderabad, Pakistan
+                        </li>
+                        <li style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 0.8rem;">
+                            <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> (555) 123-4567
+                        </li>
+                        <li style="color: #cbd5e1; font-size: 0.95rem;">
+                            <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> info@khyber.edu
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <span class="year"></span> Khyber University. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
